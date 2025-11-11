@@ -19,6 +19,11 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
+    '/[...pathMatch]': RouteRecordInfo<'/[...pathMatch]', '/:pathMatch(.*)', { pathMatch: ParamValue<true> }, { pathMatch: ParamValue<false> }>,
+    '/about': RouteRecordInfo<'/about', '/about', Record<never, never>, Record<never, never>>,
+    '/privacy': RouteRecordInfo<'/privacy', '/privacy', Record<never, never>, Record<never, never>>,
+    '/terms': RouteRecordInfo<'/terms', '/terms', Record<never, never>, Record<never, never>>,
+    '/upload': RouteRecordInfo<'/upload', '/upload', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -34,6 +39,26 @@ declare module 'vue-router/auto-routes' {
   export interface _RouteFileInfoMap {
     'src/pages/index.vue': {
       routes: '/'
+      views: never
+    }
+    'src/pages/[...pathMatch].vue': {
+      routes: '/[...pathMatch]'
+      views: never
+    }
+    'src/pages/about.vue': {
+      routes: '/about'
+      views: never
+    }
+    'src/pages/privacy.vue': {
+      routes: '/privacy'
+      views: never
+    }
+    'src/pages/terms.vue': {
+      routes: '/terms'
+      views: never
+    }
+    'src/pages/upload.vue': {
+      routes: '/upload'
       views: never
     }
   }

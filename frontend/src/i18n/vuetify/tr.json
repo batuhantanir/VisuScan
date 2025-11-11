@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "analyze": "Analiz Yap",
+    "about": "Hakkımızda"
+  },
+  "footer": {
+    "description": "VisuScan, görüntü analizi için yapay zeka destekli bir web uygulamasıdır. Kullanıcıların görüntü yüklemesine ve analiz etmesine olanak tanır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları"
+  },
+  "language": "Türkçe"
+}

@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "home": "Home",
+    "analyze": "Analyze",
+    "about": "About Us"
+  },
+  "footer": {
+    "description": "VisuScan is an AI-powered web application for image analysis. It allows users to upload and analyze images.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "language": "English"
+}
