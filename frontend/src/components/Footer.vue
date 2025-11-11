@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from "vue-i18n";
+import { computed } from "vue";
 
 const { t } = useI18n();
 
@@ -18,7 +19,7 @@ const socialMediaIcons = [
   },
 ];
 
-const footerItems = [
+const footerItems = computed(() => [
   [
     {
       title: t("navbar.home"),
@@ -43,7 +44,7 @@ const footerItems = [
       route: "/terms",
     },
   ],
-];
+]);
 </script>
 
 <template>
@@ -90,14 +91,15 @@ const footerItems = [
           class="d-flex flex-column bg-transparent align-center"
           style="min-width: 120px"
         >
-          <a
+          <v-btn
             v-for="item in itemSet"
             :key="item.title + index"
             :href="item.route"
-            class="my-2 text-body-2 text-decoration-none text-white"
+            class="my-1 text-body-2 text-decoration-none text-white"
+            variant="text"
           >
             {{ item.title }}
-          </a>
+          </v-btn>
         </div>
       </div>
     </v-container>

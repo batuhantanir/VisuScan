@@ -19,11 +19,7 @@ import heroImage from '@/assets/hero-image.png';
           </v-btn>
         </v-col>
         <v-col cols="12" md="6">
-          <v-img
-            src=""
-            alt="Hero Image"
-            contain
-          ></v-img>
+          <v-file-input density="default"></v-file-input>
         </v-col>
       </v-row>
     </v-container>

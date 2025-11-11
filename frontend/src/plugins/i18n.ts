@@ -2,8 +2,8 @@ import { en as vuetifyEn, tr as vuetifyTr } from "vuetify/locale";
 import { createI18n, useI18n } from "vue-i18n";
 import { createVueI18nAdapter } from "vuetify/locale/adapters/vue-i18n";
 
-import tr from "@/i18n/vuetify/tr.json";
-import en from "@/i18n/vuetify/en.json";
+import tr from "@/i18n/tr.json";
+import en from "@/i18n/en.json";
 
 const messages = {
   en: {

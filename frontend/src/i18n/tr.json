@@ -9,5 +9,9 @@
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları"
   },
+  "upload": {
+    "label": "Bir resim dosyası seçin",
+    "chip": "Dosya seçildi"
+  },
   "language": "Türkçe"
 }
