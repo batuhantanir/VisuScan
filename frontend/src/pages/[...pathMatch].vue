@@ -1,10 +1,19 @@
+<script lang="ts" setup>
+import { Vue3Lottie } from 'vue3-lottie'
+import NotFoundAnimation from '@/assets/animations/notFound.json'
+
+</script>
+
 <template>
   <v-container class="text-center py-12 flex-grow-1 height-auto">
     <v-row justify="center" class="ga-4">
       <v-col cols="12" class="d-flex flex-column align-center">
-        <v-icon size="96" color="indigo-lighten-1"
-          >mdi-alert-circle-outline</v-icon
-        >
+        <Vue3Lottie
+          :animationData="NotFoundAnimation"
+          style="width: 300px; height: 300px;"
+          loop
+          autoplay
+        />
         <h1 class="display-1 font-weight-bold">404</h1>
         <h2 class="headline">Page Not Found</h2>
         <p class="subtitle-1">

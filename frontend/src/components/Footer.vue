@@ -94,7 +94,7 @@ const footerItems = [
             v-for="item in itemSet"
             :key="item.title + index"
             :href="item.route"
-            class="my-2 text-body-2 text-decoration-none text-caption"
+            class="my-2 text-body-2 text-decoration-none text-white"
           >
             {{ item.title }}
           </a>
