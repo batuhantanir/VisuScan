@@ -21,6 +21,7 @@ declare module 'vue-router/auto-routes' {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/[...pathMatch]': RouteRecordInfo<'/[...pathMatch]', '/:pathMatch(.*)', { pathMatch: ParamValue<true> }, { pathMatch: ParamValue<false> }>,
     '/about': RouteRecordInfo<'/about', '/about', Record<never, never>, Record<never, never>>,
+    '/analyze/result': RouteRecordInfo<'/analyze/result', '/analyze/result', Record<never, never>, Record<never, never>>,
     '/privacy': RouteRecordInfo<'/privacy', '/privacy', Record<never, never>, Record<never, never>>,
     '/terms': RouteRecordInfo<'/terms', '/terms', Record<never, never>, Record<never, never>>,
     '/upload': RouteRecordInfo<'/upload', '/upload', Record<never, never>, Record<never, never>>,
@@ -47,6 +48,10 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/about.vue': {
       routes: '/about'
+      views: never
+    }
+    'src/pages/analyze/result.vue': {
+      routes: '/analyze/result'
       views: never
     }
     'src/pages/privacy.vue': {

@@ -9,5 +9,13 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
+  "upload": {
+    "label": "Bir resim dosyası seçin",
+    "chip": "Dosya seçildi"
+  },
+  "hero": {
+    "title": "Scan Your Images",
+    "description": "Upload your images and let VisuScan analyze them for you with cutting-edge AI technology"
+  },
   "language": "English"
 }

@@ -1,19 +1,10 @@
-import { en as vuetifyEn, tr as vuetifyTr } from "vuetify/locale";
-import { createI18n, useI18n } from "vue-i18n";
-import { createVueI18nAdapter } from "vuetify/locale/adapters/vue-i18n";
-
-import tr from "@/i18n/tr.json";
-import en from "@/i18n/en.json";
+import { createI18n } from "vue-i18n";
+import tr from "../locales/tr.json";
+import en from "../locales/en.json";
 
 const messages = {
-  en: {
-    ...en,
-    $vuetify: vuetifyEn,
-  },
-  tr: {
-    ...tr,
-    $vuetify: vuetifyTr,
-  },
+  en: en,
+  tr: tr,
 };
 
 const locale = {
@@ -30,5 +21,4 @@ export const supportedLanguages = [
 
 const i18n = createI18n(locale);
 
-export const vuetifyAdapter = createVueI18nAdapter({ i18n, useI18n });
 export default i18n;

@@ -49,11 +49,11 @@ const footerItems = computed(() => [
 
 <template>
   <v-footer
-    class="text-center d-flex justify-space-between ga-2 py-4 flex-grow-0 flex-column flex-sm-row"
+    class="text-center d-flex justify-center justify-md-space-between ga-2 py-4 flex-grow-0 flex-column flex-sm-row"
     color="indigo-lighten-1"
   >
     <v-container
-      class="d-flex flex-column flex-sm-row justify-space-between align-center"
+      class="d-flex flex-column flex-sm-row justify-center justify-md-space-between align-center"
     >
       <div
         class="d-flex flex-column align-center ga-2"
@@ -84,7 +84,7 @@ const footerItems = computed(() => [
         </div>
       </div>
 
-      <div class="d-flex ga-6 justify-center flex-wrap mt-4 mt-sm-0">
+      <div class="ga-6 justify-center flex-wrap mt-4 mt-sm-0 d-none d-md-flex">
         <div
           v-for="(itemSet, index) in footerItems"
           :key="index"

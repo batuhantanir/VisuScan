@@ -13,5 +13,9 @@
     "label": "Bir resim dosyası seçin",
     "chip": "Dosya seçildi"
   },
+  "hero": {
+    "title":"Görüntülerinizi Tarayın",
+    "description":"Görüntülerinizi yükleyin ve VisuScan'ın en son AI teknolojisiyle bunları sizin için analiz etmesine izin verin"
+  },
   "language": "Türkçe"
 }
