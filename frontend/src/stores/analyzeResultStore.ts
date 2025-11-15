@@ -13,5 +13,9 @@ export const useAnalyzeResultStore = defineStore("analyzeResult", {
       this.imageBlob = analyzeResult.imageBlob;
       this.results = analyzeResult.results;
     },
+    clearAnalyzeResult() {
+      this.imageBlob = null;
+      this.results = [];
+    }
   },
 });
