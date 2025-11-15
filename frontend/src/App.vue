@@ -1,6 +1,9 @@
 <script lang="ts" setup>
 import Nabvar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
+import { useUIStore } from "@/stores/uiStore";
+
+const uiStore = useUIStore();
 </script>
 
 <template>
@@ -10,5 +13,16 @@ import Footer from "@/components/Footer.vue";
       <router-view />
     </v-main>
     <Footer />
+    <v-overlay
+      :model-value="uiStore.isLoading"
+      class="d-flex align-center justify-center"
+      persistent
+    >
+      <v-progress-circular
+        color="primary"
+        size="64"
+        indeterminate
+      ></v-progress-circular>
+    </v-overlay>
   </v-app>
 </template>

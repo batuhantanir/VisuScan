@@ -13,11 +13,14 @@ declare module 'vue' {
   export interface GlobalComponents {
     DropFile: typeof import('./components/DropFile.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
-    HeroSection: typeof import('./components/HeroSection.vue')['default']
+    HeroSection: typeof import('./components/home/HeroSection/index.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ShowInput: typeof import('./components/Upload/showInput.vue')['default']
+    ShowResult: typeof import('./components/Upload/showResult.vue')['default']
     ToggleLang: typeof import('./components/ToggleLang.vue')['default']
     ToggleTheme: typeof import('./components/ToggleTheme.vue')['default']
+    Upload: typeof import('./components/upload/index.vue')['default']
   }
 }

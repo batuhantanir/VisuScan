@@ -4,6 +4,7 @@ import { useTheme } from "vuetify";
 import logoLight from "@/assets/visuscan-light.png";
 import logoDark from "@/assets/visuscan-dark.png";
 import { i18n } from "@/plugins/i18n";
+import { RouterLink } from "vue-router";
 
 const theme = useTheme();
 
@@ -23,15 +24,20 @@ const logoUrl = computed(() => {
 <template>
   <v-app-bar app class="d-block">
     <v-container class="d-flex flex-row align-center">
-      <v-img
-        :src="logoUrl"
-        alt="VisuScan Logo"
-        max-height="30"
-        max-width="120"
-        contain
-        class="mx-3"
-        draggable="false"
-      />
+      <RouterLink to="/">
+        <v-img
+          :src="logoUrl"
+          alt="VisuScan Logo"
+          max-height="30"
+          max-width="120"
+          width="120"
+          height="30"
+          contain
+          class="mx-3"
+          draggable="false"
+          href="/"
+        />
+      </RouterLink>
 
       <v-spacer></v-spacer>
 

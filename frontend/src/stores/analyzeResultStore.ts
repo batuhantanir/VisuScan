@@ -4,17 +4,20 @@ import { defineStore } from "pinia";
 export const useAnalyzeResultStore = defineStore("analyzeResult", {
   state: (): AnalyzeResult => {
     return {
-      imageBlob: null,
+      imageBlobUrl: null,
+      imageName: null,
       results: [],
     };
   },
   actions: {
     setAnalyzeResult(analyzeResult: AnalyzeResult) {
-      this.imageBlob = analyzeResult.imageBlob;
+      this.imageBlobUrl = analyzeResult.imageBlobUrl;
+      this.imageName = analyzeResult.imageName;
       this.results = analyzeResult.results;
     },
     clearAnalyzeResult() {
-      this.imageBlob = null;
+      this.imageBlobUrl = null;
+      this.imageName = null;
       this.results = [];
     }
   },

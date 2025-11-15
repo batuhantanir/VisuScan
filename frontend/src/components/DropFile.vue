@@ -1,27 +1,39 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import { useUIStore } from "@/stores/uiStore";
+import { useAnalyzeResultStore } from "@/stores/analyzeResultStore";
+
+const uiStore = useUIStore();
+const analyzeResultStore = useAnalyzeResultStore();
 
 const props = defineProps<{
   redirect?: string;
+  border?: string;
 }>();
 
 const router = useRouter();
 
 const files = ref<File | undefined>(undefined);
-const isLoading = ref(false);
 
 const uploadFiles = () => {
+  uiStore.startLoading();
+  analyzeResultStore.clearAnalyzeResult();
   props.redirect && router.push(props.redirect);
   console.log("Dosyalar seçildi:", files.value);
+  const blobUrl = files.value ? URL.createObjectURL(files.value) : null;
   if (files.value) {
-    isLoading.value = true;
     console.log("Yükleniyor:", files.value);
+    analyzeResultStore.setAnalyzeResult({
+      imageBlobUrl: blobUrl,
+      imageName: files.value.name,
+      results: [],
+    });
     const file = files.value;
     console.log("Yüklenen dosya adı:", file?.name);
     setTimeout(() => {
-      isLoading.value = false;
       files.value = undefined;
+      uiStore.stopLoading();
       const id = 1;
     }, 2000);
   }
@@ -32,23 +44,13 @@ const uploadFiles = () => {
   <VFileUpload
     v-model="files"
     accept="image/*"
-    :loading="isLoading"
-    :disabled="isLoading"
-    variant="outlined"
+    :loading="uiStore.isLoading"
+    :disabled="uiStore.isLoading"
     class="custom-upload"
     @change="uploadFiles"
+    :border="props.border || ''"
+    width="100%"
   ></VFileUpload>
-  <v-overlay
-    :model-value="isLoading"
-    class="d-flex align-center justify-center"
-    persistent
-  >
-    <v-progress-circular
-      color="primary"
-      size="64"
-      indeterminate
-    ></v-progress-circular>
-  </v-overlay>
 </template>
 
 <style>
@@ -57,4 +59,5 @@ const uploadFiles = () => {
   opacity: 0.6;
   margin-bottom: 8px;
 }
+
 </style>

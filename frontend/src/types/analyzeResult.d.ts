@@ -4,7 +4,8 @@ type AnalyzeResultItem = {
 };
 
 interface AnalyzeResult {
-  imageBlob: Blob | null;
+  imageBlobUrl: string | null;
+  imageName: string | null;
   results: Array<AnalyzeResultItem>;
 }
 

@@ -2,18 +2,20 @@ import type { UIState } from "@/types/uiStore";
 import { defineStore } from "pinia";
 
 export const useUIStore = defineStore("ui", {
-  state: (): UIState => {
-    return {
-      isLoading: false,
-      errorMessage: undefined,
-    };
-  },
+  state: (): UIState => ({
+    isLoading: false,
+    errorMessage: undefined,
+  }),
   actions: {
-    setLoading(isLoading: boolean) {
-      this.isLoading = isLoading;
+    startLoading() {
+      this.isLoading = true
+    },
+    stopLoading() {
+      this.isLoading = false
     },
     setErrorMessage(message: string) {
       this.errorMessage = message;
+      this.isLoading = false;
     },
     clearErrorMessage() {
       this.errorMessage = "";
