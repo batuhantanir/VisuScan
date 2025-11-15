@@ -2,31 +2,27 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
+const props = defineProps<{
+  redirect?: string;
+}>();
+
 const router = useRouter();
 
-const files = ref<File>(null);
+const files = ref<File | undefined>(undefined);
 const isLoading = ref(false);
 
-const onBrowseClick = (event: Event) => {
-  const target = event.currentTarget as HTMLElement;
-  const input = target
-    .closest(".v-file-upload")
-    ?.querySelector('input[type="file"]') as HTMLInputElement;
-  input?.click();
-};
-
 const uploadFiles = () => {
-  console.log("Dosyalar seçildi:", files);
-  if (files) {
+  props.redirect && router.push(props.redirect);
+  console.log("Dosyalar seçildi:", files.value);
+  if (files.value) {
     isLoading.value = true;
     console.log("Yükleniyor:", files.value);
     const file = files.value;
-    console.log("Yüklenen dosya adı:", file.name);
+    console.log("Yüklenen dosya adı:", file?.name);
     setTimeout(() => {
       isLoading.value = false;
-      files.value = null;
+      files.value = undefined;
       const id = 1;
-      router.push(`/analyze/result?id=${id}`);
     }, 2000);
   }
 };

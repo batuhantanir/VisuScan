@@ -3,7 +3,7 @@ import { computed } from "vue";
 import { useTheme } from "vuetify";
 import logoLight from "@/assets/visuscan-light.png";
 import logoDark from "@/assets/visuscan-dark.png";
-import i18n from "@/plugins/i18n";
+import { i18n } from "@/plugins/i18n";
 
 const theme = useTheme();
 
@@ -11,7 +11,7 @@ const { t } = i18n.global;
 
 const navbarItems = computed(() => [
   { title: t("navbar.home"), icon: "mdi-home", route: "/" },
-  { title: t("navbar.analyze"), icon: "mdi-upload", route: "/upload" },
+  { title: t("navbar.analyze"), icon: "mdi-upload", route: "/analyze/upload" },
   { title: t("navbar.about"), icon: "mdi-information", route: "/about" },
 ]);
 

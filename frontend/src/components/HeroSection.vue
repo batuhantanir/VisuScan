@@ -23,7 +23,7 @@ import DataScanning from "@/assets/animations/dataScanning.json";
           </p>
         </v-col>
         <v-col cols="12" md="6">
-          <DropFile />
+          <DropFile :redirect="'/analyze/upload'" />
         </v-col>
       </v-row>
     </v-container>
