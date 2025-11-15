@@ -4,7 +4,8 @@ import Vue3Lottie from "vue3-lottie";
 
 import { i18n } from "./i18n";
 import vuetify from "./vuetify";
+import pinia from "./pinia";
 
 export function registerPlugins(app: App) {
-  app.use(i18n).use(vuetify).use(router).use(Vue3Lottie);
+  app.use(i18n).use(vuetify).use(router).use(Vue3Lottie).use(pinia);
 }
