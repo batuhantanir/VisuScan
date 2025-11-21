@@ -5,14 +5,24 @@ import logoLight from "@/assets/visuscan-light.png";
 import logoDark from "@/assets/visuscan-dark.png";
 import { i18n } from "@/plugins/i18n";
 import { RouterLink } from "vue-router";
+import { useAnalyzeResultStore } from "@/stores/analyzeResultStore";
 
 const theme = useTheme();
 
 const { t } = i18n.global;
+const analyzeResultStore = useAnalyzeResultStore();
+const handleAnalyzeClick = () => {
+  analyzeResultStore.clearAnalyzeResult();
+};
 
 const navbarItems = computed(() => [
   { title: t("navbar.home"), icon: "mdi-home", route: "/" },
-  { title: t("navbar.analyze"), icon: "mdi-upload", route: "/analyze/upload" },
+  {
+    title: t("navbar.analyze"),
+    icon: "mdi-upload",
+    route: "/analyze/upload",
+    onClick: handleAnalyzeClick,
+  },
   { title: t("navbar.about"), icon: "mdi-information", route: "/about" },
 ]);
 
@@ -47,6 +57,7 @@ const logoUrl = computed(() => {
         :to="item.route"
         text
         class="mx-2 d-none d-md-flex"
+        @click="item?.onClick"
       >
         <v-icon left>{{ item.icon }}</v-icon>
         {{ item.title }}
@@ -63,6 +74,7 @@ const logoUrl = computed(() => {
               v-for="item in navbarItems"
               :key="item.title"
               :to="item.route"
+              @click="item?.onClick"
             >
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item>

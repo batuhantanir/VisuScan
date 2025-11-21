@@ -16,6 +16,7 @@ const props = defineProps<{
 const router = useRouter();
 
 const files = ref<File | undefined>(undefined);
+const inputRef = ref<HTMLElement | null>(null);
 
 const options = {
   headers: {
@@ -48,6 +49,9 @@ const uploadFiles = async () => {
       .finally(() => {
         uiStore.stopLoading();
         files.value = undefined;
+        if (inputRef?.value) {
+          inputRef.value = null;
+        }
       });
   }
 };
@@ -63,6 +67,7 @@ const uploadFiles = async () => {
     @change="uploadFiles"
     :border="props.border || ''"
     width="100%"
+    ref="inputRef"
   ></VFileUpload>
 </template>
 
@@ -71,5 +76,8 @@ const uploadFiles = async () => {
   font-size: 48px;
   opacity: 0.6;
   margin-bottom: 8px;
+}
+.v-file-upload-items {
+  display: none;
 }
 </style>
