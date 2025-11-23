@@ -11,14 +11,21 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AiGenerationSection: typeof import('./components/home/AiGenerationSection/index.vue')['default']
+    AiInformation: typeof import('./components/home/AiInformation/index.vue')['default']
     DropFile: typeof import('./components/DropFile.vue')['default']
+    Faq: typeof import('./components/home/Faq/index.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     HeroSection: typeof import('./components/home/HeroSection/index.vue')['default']
+    Main: typeof import('./components/Main.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
+    QuickResult: typeof import('./components/home/QuickResult/index.vue')['default']
+    ResultImage: typeof import('./components/Upload/ShowResult/ResultImage.vue')['default']
+    ResultInformation: typeof import('./components/Upload/ShowResult/ResultInformation.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ShowInput: typeof import('./components/Upload/ShowInput.vue')['default']
-    ShowResult: typeof import('./components/Upload/ShowResult.vue')['default']
+    ShowResult: typeof import('./components/Upload/ShowResult/index.vue')['default']
     ToggleLang: typeof import('./components/ToggleLang.vue')['default']
     ToggleTheme: typeof import('./components/ToggleTheme.vue')['default']
     Upload: typeof import('./components/Upload/index.vue')['default']

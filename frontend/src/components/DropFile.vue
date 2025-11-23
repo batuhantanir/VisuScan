@@ -4,6 +4,7 @@ import { useRouter } from "vue-router";
 import { useUIStore } from "@/stores/uiStore";
 import { useAnalyzeResultStore } from "@/stores/analyzeResultStore";
 import { api } from "@/lib/api";
+import { scrollTo } from "vuetify/lib/composables/goto.mjs";
 
 const uiStore = useUIStore();
 const analyzeResultStore = useAnalyzeResultStore();
@@ -18,13 +19,13 @@ const router = useRouter();
 const files = ref<File | undefined>(undefined);
 const inputRef = ref<HTMLElement | null>(null);
 
-const options = {
-  headers: {
-    "Content-Type": "multipart/form-data",
-  },
-};
-
 const uploadFiles = async () => {
+  const options = {
+    headers: {
+      "Content-Type": "multipart/form-data",
+      "Accept-Language": localStorage.getItem("lang") || "en",
+    },
+  };
   uiStore.startLoading();
   analyzeResultStore.clearAnalyzeResult();
   props.redirect && router.push(props.redirect);
@@ -39,7 +40,7 @@ const uploadFiles = async () => {
         analyzeResultStore.setAnalyzeResult({
           imageBlobUrl: blobUrl,
           imageName: files?.value?.name ?? "",
-          results: response.data.results,
+          result: response.data.result,
         });
         console.log("Sunucudan yanıt alındı:", response.data);
       })
@@ -52,6 +53,7 @@ const uploadFiles = async () => {
         if (inputRef?.value) {
           inputRef.value = null;
         }
+        scrollTo(0, {});
       });
   }
 };
@@ -60,7 +62,7 @@ const uploadFiles = async () => {
 <template>
   <VFileUpload
     v-model="files"
-    accept="image/*"
+    accept="image/png, image/jpeg, image/jpg"
     :loading="uiStore.isLoading"
     :disabled="uiStore.isLoading"
     class="custom-upload"

@@ -1,6 +1,5 @@
-const shortName = (name: string | null | undefined) => {
+const shortName = (name: string | null | undefined, maxLength: number = 12) => {
   if (!name) return "";
-  const maxLength = 12;
   return name.length > maxLength ? name.slice(0, maxLength) + "..." : name;
 };
 

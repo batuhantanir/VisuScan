@@ -9,7 +9,7 @@ type AnalyzeResultItem = {
 interface AnalyzeResult {
   imageBlobUrl: string | null;
   imageName: string | null;
-  results: Array<AnalyzeResultItem>;
+  result: AnalyzeResultItem | null;
 }
 
 export { AnalyzeResult, AnalyzeResultItem };

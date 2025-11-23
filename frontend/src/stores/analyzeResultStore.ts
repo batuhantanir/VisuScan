@@ -2,23 +2,21 @@ import type { AnalyzeResult } from "@/types/analyzeResult";
 import { defineStore } from "pinia";
 
 export const useAnalyzeResultStore = defineStore("analyzeResult", {
-  state: (): AnalyzeResult => {
-    return {
-      imageBlobUrl: null,
-      imageName: null,
-      results: [],
-    };
-  },
+  state: (): AnalyzeResult => ({
+    imageBlobUrl: null,
+    imageName: null,
+    result: null,
+  }),
   actions: {
     setAnalyzeResult(analyzeResult: AnalyzeResult) {
       this.imageBlobUrl = analyzeResult.imageBlobUrl;
       this.imageName = analyzeResult.imageName;
-      this.results = analyzeResult.results;
+      this.result = analyzeResult.result;
     },
     clearAnalyzeResult() {
       this.imageBlobUrl = null;
       this.imageName = null;
-      this.results = [];
-    }
+      this.result = null;
+    },
   },
 });

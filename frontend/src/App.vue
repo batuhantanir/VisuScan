@@ -9,9 +9,7 @@ const uiStore = useUIStore();
 <template>
   <v-app class="d-flex flex-column min-vh-100">
     <Nabvar />
-    <v-main class="flex-1">
-      <router-view />
-    </v-main>
+    <Main />
     <Footer />
     <v-overlay
       :model-value="uiStore.isLoading"

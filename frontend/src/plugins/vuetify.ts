@@ -25,6 +25,23 @@ const vuetifyOptions = {
 const vuetify = createVuetify({
   ...vuetifyOptions,
   locale: { adapter: vuetifyAdapter },
+  theme: {
+    defaultTheme: theme.defaultTheme,
+    themes: {
+      dark: {
+        dark: true,
+        colors: {
+          background: "#121212",
+        },
+      },
+      light: {
+        dark: false,
+        colors: {
+          background: "#FFFFFF",
+        },
+      },
+    },
+  },
 });
 
 export default vuetify;

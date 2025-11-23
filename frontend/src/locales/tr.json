@@ -13,9 +13,136 @@
     "label": "Bir resim dosyası seçin",
     "chip": "Dosya seçildi"
   },
-  "hero": {
-    "title":"Görüntülerinizi Tarayın",
-    "description":"Görüntülerinizi yükleyin ve VisuScan'ın en son AI teknolojisiyle bunları sizin için analiz etmesine izin verin"
+  "home": {
+    "hero": {
+      "title": "Görüntülerinizi Tarayın",
+      "description": "Görüntülerinizi yükleyin ve VisuScan'ın en son AI teknolojisiyle bunları sizin için analiz etmesine izin verin",
+      "eyebrow": "Yapay Zeka Destekli Analiz",
+      "cta": "Hemen Başlayın"
+    },
+    "aiGeneration": {
+      "title": "Yapay Zeka ile Görünmeyeni Keşfedin",
+      "description": "Google Gemini altyapısı ile görsellerinizdeki en ince detayları, nesneleri ve metinleri saniyeler içinde analiz ediyoruz.",
+      "features": [
+        {
+          "title": "Detaylı Nesne Tanıma",
+          "text": "Görseldeki tüm objeleri, markaları ve metinleri %99 doğrulukla tespit eder ve listeler.",
+          "icon": "mdi-image-search-outline"
+        },
+        {
+          "title": "Güvenlik Filtreleri",
+          "text": "Görsellerin genel ahlaka veya iş yeri kurallarına uygunluğunu otomatik olarak denetler.",
+          "icon": "mdi-shield-check-outline"
+        },
+        {
+          "title": "Hızlı Entegrasyon",
+          "text": "Analiz çıktılarını JSON formatında alarak veritabanınıza veya uygulamanıza hemen entegre edin.",
+          "icon": "mdi-code-json"
+        }
+      ]
+    },
+    "aiInformation": {
+      "features": [
+        {
+          "title": "Gemini 2.5",
+          "text": "AI Modeli"
+        },
+        {
+          "title": "%99.9",
+          "text": "Doğruluk payı"
+        },
+        {
+          "title": "JSON",
+          "text": "Çıktı Formatı"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "question": "VisuScan nedir?",
+          "answer": "VisuScan, kullanıcıların görüntü yükleyip analiz etmelerine olanak tanıyan yapay zeka destekli bir web uygulamasıdır."
+        },
+        {
+          "question": "Hangi dosya formatlarını destekliyorsunuz?",
+          "answer": "JPG, PNG, WEBP, HEIC gibi yaygın görüntü dosyası formatlarını destekliyoruz."
+        },
+        {
+          "question": "Yüklediğim görüntüler güvende mi?",
+          "answer": "Evet, kullanıcı gizliliği bizim için önemlidir. Yüklenen tüm görüntüler güvenli sunucularımızda saklanır ve üçüncü taraflarla paylaşılmaz."
+        },
+        {
+          "question": "Bu hizmet ücretli mi?",
+          "answer": "VisuScan şu anda Beta sürümündedir. Tamamen ücretsizdir."
+        }
+      ]
+    },
+    "quickResult": {
+      "title": "Saniyeler İçinde Sonuç Alın",
+      "description": "Karmaşık işlemlere gerek yok. Sadece sürükleyip bırakın, gerisini yapay zeka halletsin. İş akışınızı hızlandırmak için tasarlandı.",
+      "steps": [
+        {
+          "title": "Görseli Yükle",
+          "desc": "PNG, JPG veya WebP formatındaki dosyanızı sürükleyip bırakın."
+        },
+        {
+          "title": "Yapay Zeka Analizi",
+          "desc": "Gemini motoru görseli piksel piksel tarar ve anlamlandırır."
+        },
+        {
+          "title": "Sonucu İndir",
+          "desc": "Yapılandırılmış veriyi kopyalayın veya proje dosyanıza kaydedin."
+        }
+      ]
+    }
+  },
+  "analyzeResult": {
+    "safeForWork": "İş için Güvenli",
+    "notSafeForWork": "İş için Güvenli Değil",
+    "qualityScore": "Kalite Puanı",
+    "newUpload": "Yeni Yükleme",
+    "noAnalysisResult": "Mevcut analiz sonucu yok."
+  },
+  "showInput": {
+    "title": "Görsel Analizi Başlatın",
+    "description": "Analiz etmek istediğiniz görseli aşağıya yükleyin.",
+    "howToUse": "Nasıl Çalışır?",
+    "features": [
+      {
+        "icon": "mdi-cloud-upload",
+        "title": "Kolay Yükleme",
+        "text": "Görselinizi sürükleyip bırakın veya dosyalarınızdan seçin. PNG, JPG formatlarını destekliyoruz."
+      },
+      {
+        "icon": "mdi-auto-fix",
+        "title": "AI Destekli Analiz",
+        "text": "Gelişmiş yapay zeka modelimiz görseli saniyeler içinde analiz eder ve detayları çıkarır."
+      },
+      {
+        "icon": "mdi-shield-check",
+        "title": "Güvenli ve Hızlı",
+        "text": "Verileriniz güvenle işlenir. Sonuçlar anında ekranınıza yansıtılır."
+      }
+    ]
+  },
+  "about": {
+    "supTitle": "Hakkımızda",
+    "title": "Görünmeyeni Görünür Kılıyoruz",
+    "description": "VisuScan, yapay zeka destekli görüntü analiz teknolojileriyle dijital dünyadaki görsel verileri anlamlandırıyor.",
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "En son yapay zeka teknolojilerini kullanarak, herkesin görsel verilerden hızlı, doğru ve anlamlı içgörüler elde etmesini sağlamak. Karmaşık analiz süreçlerini basitleştirerek zaman ve kaynak tasarrufu sunmak."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": " Görüntü işleme alanında global bir standart belirlemek. Teknolojimizle iş süreçlerini optimize eden, güvenliği artıran ve yeni keşiflere kapı aralayan öncü platform olmak."
+    },
+    "potential": {
+      "title": "Görsellerinizin Potansiyelini Keşfetmeye Hazır mısınız?",
+      "description": "VisuScan'i hemen ücretsiz deneyin ve yapay zekanın gücünü kendi projelerinizde hissedin."
+    },
+    "cta": "Analize Başla"
   },
   "language": "Türkçe"
 }

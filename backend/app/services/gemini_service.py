@@ -25,11 +25,18 @@ model = genai.GenerativeModel(
 )
 
 
-async def analyze_image_structured(file_bytes: bytes) -> dict:
+async def analyze_image_structured(file_bytes: bytes, language: str = "en") -> dict:
     try:
         image = Image.open(io.BytesIO(file_bytes))
 
-        prompt = "Bu resmi analiz et..."
+        prompt = f"""
+        Analyze this image.
+        Identify the main object, provide a detailed description, extract tags, 
+        check if it is safe, and give a quality score.
+        
+        IMPORTANT: Respond in JSON format. 
+        Ensure all text fields (description, tags, main_subject) are in the '{language}' language.
+        """
 
         response = await model.generate_content_async([prompt, image])
 

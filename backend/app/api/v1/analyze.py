@@ -1,4 +1,4 @@
-from fastapi import status, File, UploadFile, HTTPException
+from fastapi import status, File, UploadFile, HTTPException, Request
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRouter
 from app.schemas.analyzeResult import AnalysisResponse
@@ -11,6 +11,7 @@ router = APIRouter(
 
 @router.post("/")
 async def get_analysis(
+    request: Request,
     file: UploadFile = File(),
 ) -> JSONResponse:
     if not file:
@@ -38,8 +39,10 @@ async def get_analysis(
             status_code=status.HTTP_400_BAD_REQUEST,
             content={"message": "Uploaded file is empty."},
         )
+    
+    language = request.headers.get("Accept-Language", "en")
 
-    result = await analyze_image_structured(content)
+    result = await analyze_image_structured(content, language=language)
 
     if result is None or "error" in result:
         raise HTTPException(
@@ -49,7 +52,7 @@ async def get_analysis(
 
     print(f"Analysis Result: {result}")
     response_content = AnalysisResponse(
-        results=result,
+        result=result,
     )
 
     return JSONResponse(status_code=status.HTTP_200_OK, content=response_content.dict())

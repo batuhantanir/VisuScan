@@ -1,11 +1,7 @@
 <template>
   <HeroSection />
-  <!-- <FeaturesSection />
-  <HowItWorksSection />
-  <TestimonialsSection />
-  <CallToActionSection /> -->
+  <AiGenerationSection />
+  <QuickResult />
+  <AiInformation />
+  <Faq/>
 </template>
-
-<script lang="ts" setup>
-//
-</script>

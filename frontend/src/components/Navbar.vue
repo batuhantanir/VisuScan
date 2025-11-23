@@ -6,6 +6,7 @@ import logoDark from "@/assets/visuscan-dark.png";
 import { i18n } from "@/plugins/i18n";
 import { RouterLink } from "vue-router";
 import { useAnalyzeResultStore } from "@/stores/analyzeResultStore";
+import { scrollTo } from "vuetify/lib/composables/goto.mjs";
 
 const theme = useTheme();
 
@@ -29,6 +30,13 @@ const navbarItems = computed(() => [
 const logoUrl = computed(() => {
   return theme.global.name.value === "dark" ? logoDark : logoLight;
 });
+
+const clickNav = (onClick) => {
+  if (onClick) {
+    onClick();
+  }
+  scrollTo(0, {});
+};
 </script>
 
 <template>
@@ -57,7 +65,7 @@ const logoUrl = computed(() => {
         :to="item.route"
         text
         class="mx-2 d-none d-md-flex"
-        @click="item?.onClick"
+        @click="clickNav(item?.onClick)"
       >
         <v-icon left>{{ item.icon }}</v-icon>
         {{ item.title }}
@@ -74,7 +82,7 @@ const logoUrl = computed(() => {
               v-for="item in navbarItems"
               :key="item.title"
               :to="item.route"
-              @click="item?.onClick"
+              @click="clickNav(item?.onClick)"
             >
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item>

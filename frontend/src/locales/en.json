@@ -10,12 +10,139 @@
     "terms": "Terms of Service"
   },
   "upload": {
-    "label": "Bir resim dosyası seçin",
-    "chip": "Dosya seçildi"
+    "label": "Select an image file",
+    "chip": "File selected"
   },
-  "hero": {
-    "title": "Scan Your Images",
-    "description": "Upload your images and let VisuScan analyze them for you with cutting-edge AI technology"
+  "home": {
+    "hero": {
+      "title": "Scan Your Images",
+      "description": "Upload your images and let VisuScan analyze them for you with cutting-edge AI technology",
+      "eyebrow": "AI-Powered Analysis",
+      "cta": "Get Started Now"
+    },
+    "aiGeneration": {
+      "title": "Discover the Invisible with Artificial Intelligence",
+      "description": "We analyze the finest details, objects, and text in your images in seconds using Google Gemini infrastructure.",
+      "features": [
+        {
+          "title": "Detailed Object Recognition",
+          "text": "It detects and lists all objects, brands, and text in the image with 99% accuracy.",
+          "icon": "mdi-image-search-outline"
+        },
+        {
+          "title": "Security Filters",
+          "text": "Automatically checks whether images comply with general morality or workplace rules.",
+          "icon": "mdi-shield-check-outline"
+        },
+        {
+          "title": "Rapid Integration",
+          "text": "Get your analysis results in JSON format and integrate them into your database or application immediately.",
+          "icon": "mdi-code-json"
+        }
+      ]
+    },
+    "aiInformation": {
+      "features": [
+        {
+          "title": "Gemini 2.5",
+          "text": "AI Model"
+        },
+        {
+          "title": "%99.9",
+          "text": "Truthfulness"
+        },
+        {
+          "title": "JSON",
+          "text": "Output Format"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What is VisuScan?",
+          "answer": "VisuScan is an AI-powered web application that allows users to upload and analyze images."
+        },
+        {
+          "question": "Which file formats do you support?",
+          "answer": "We support common image file formats such as JPG, PNG, WEBP, and HEIC."
+        },
+        {
+          "question": "Are the images I uploaded safe?",
+          "answer": "Yes, user privacy is important to us. All uploaded images are stored on our secure servers and are not shared with third parties."
+        },
+        {
+          "question": "Is this service paid?",
+          "answer": "VisuScan is currently in Beta. It is completely free."
+        }
+      ]
+    },
+    "quickResult": {
+      "title": "Get Results in Seconds",
+      "description": "No complicated procedures are needed. Just drag and drop, and let artificial intelligence handle the rest. Designed to speed up your workflow.",
+      "steps": [
+        {
+          "title": "Upload Image",
+          "desc": "Drag and drop your PNG, JPG, or WebP file."
+        },
+        {
+          "title": "Artificial Intelligence Analysis",
+          "desc": "The Gemini engine scans and interprets the image pixel by pixel."
+        },
+        {
+          "title": "Download the Result",
+          "desc": "Copy the structured data or save it to your project file."
+        }
+      ]
+    }
+  },
+  "analyzeResult": {
+    "safeForWork": "Safe for Work",
+    "notSafeForWork": "Not Safe for Work",
+    "qualityScore": "Quality Score",
+    "newUpload": "New Upload",
+    "noAnalysisResult": "No analysis result available."
+  },
+  "showInput": {
+    "title": "Start Visual Analysis",
+    "description": "Upload the image you want to analyze below.",
+    "howToUse": "How It Works?",
+    "features": [
+      {
+        "icon": "mdi-cloud-upload",
+        "title": "Easy Upload",
+        "text": "Drag and drop your image or select from your files. We support PNG, JPG formats."
+      },
+      {
+        "icon": "mdi-auto-fix",
+        "title": "AI-Powered Analysis",
+        "text": "Our advanced AI model analyzes the image in seconds and extracts details."
+      },
+      {
+        "icon": "mdi-shield-check",
+        "title": "Safe and Fast",
+        "text": "Your data is processed securely. Results are displayed on your screen instantly."
+      }
+    ]
+  },
+  "about": {
+    "supTitle": "About Us",
+    "title": "Making the Invisible Visible",
+    "description": "VisuScan leverages AI-powered image analysis technologies to make sense of visual data in the digital world.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To enable everyone to quickly, accurately, and meaningfully gain insights from visual data using the latest AI technologies. Simplifying complex analysis processes to save time and resources."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To set a global standard in image processing. To be a leading platform that optimizes business processes, enhances security, and opens doors to new discoveries with our technology."
+    },
+    "potential": {
+      "title": "Ready to Unlock the Potential of Your Images?",
+      "description": "Try VisuScan for free now and experience the power of AI in your own projects."
+    },
+    "cta": "Start Analysis"
   },
   "language": "English"
 }
