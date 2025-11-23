@@ -4,7 +4,7 @@ import { useI18n } from "vue-i18n";
 
 let { locale } = useI18n();
 
-const toggleLanguage = (lang) => {
+const toggleLanguage = (lang: { value: string }) => {
   locale.value = lang.value;
   localStorage.setItem("lang", lang.value);
 };

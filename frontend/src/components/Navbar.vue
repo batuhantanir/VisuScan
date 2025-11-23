@@ -31,7 +31,7 @@ const logoUrl = computed(() => {
   return theme.global.name.value === "dark" ? logoDark : logoLight;
 });
 
-const clickNav = (onClick) => {
+const clickNav = (onClick: (() => void) | undefined) => {
   if (onClick) {
     onClick();
   }
