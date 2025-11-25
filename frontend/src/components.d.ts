@@ -14,6 +14,7 @@ declare module 'vue' {
     AiGenerationSection: typeof import('./components/home/AiGenerationSection/index.vue')['default']
     AiInformation: typeof import('./components/home/AiInformation/index.vue')['default']
     DropFile: typeof import('./components/DropFile.vue')['default']
+    DynamicList: typeof import('./components/DynamicList.vue')['default']
     Faq: typeof import('./components/home/Faq/index.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     HeroSection: typeof import('./components/home/HeroSection/index.vue')['default']

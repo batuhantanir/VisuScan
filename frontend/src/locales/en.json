@@ -144,5 +144,99 @@
     },
     "cta": "Start Analysis"
   },
+  "terms": {
+    "title": "Terms of Service",
+    "description": "Please read these terms of service carefully before using VisuScan.",
+    "termsContent": [
+      {
+        "title": "1. Acceptance of Terms",
+        "description": "By accessing the VisuScan website or using our services, you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, you should not use our services."
+      },
+      {
+        "title": "2. Service Description",
+        "description": "VisuScan is a web application that uses artificial intelligence technologies to analyze images uploaded by users. The service is provided \"as is\" and \"as available.\""
+      },
+      {
+        "title": "3. User Responsibilities",
+        "description": "When using the service, you agree not to engage in the following actions:",
+        "list": [
+          "Uploading illegal, harmful, threatening, obscene, hateful, or otherwise objectionable content.",
+          "Uploading content that infringes on the intellectual property rights of others.",
+          "Attempting to breach the security of the service or uploading viruses, worms, or other malicious software.",
+          "Attempting to reverse engineer the AI model."
+        ]
+      },
+      {
+        "title": "4. Intellectual Property Rights",
+        "children": [
+          {
+            "title": "4.1. User Content",
+            "description": "All rights to the images you upload belong to you. By uploading images to VisuScan, you grant us a temporary license to process these images solely for the purpose of providing the analysis service."
+          },
+          {
+            "title": "4.2. VisuScan Content",
+            "description": "The design, code, logo, and all software of the service are the property of VisuScan and are protected by copyright laws."
+          }
+        ]
+      },
+      {
+        "alert": true,
+        "title": "5. AI Disclaimer (Important)",
+        "description": "Although VisuScan uses the latest artificial intelligence technologies, AI is not infallible. Analysis results may not always be 100% accurate, complete, or reliable. Results provided by VisuScan are for informational purposes only and should not be relied upon for medical, legal, financial, or other critical decisions. It is the user's responsibility to verify the accuracy of the results."
+      },
+      {
+        "title": "6. Limitation of Liability",
+        "description": "To the maximum extent permitted by law, VisuScan shall not be liable for any direct, indirect, incidental, or punitive damages arising from the use or inability to use the service."
+      },
+      {
+        "title": "7. Changes to Terms",
+        "description": "We reserve the right to modify these Terms at any time. Changes take effect as soon as they are posted on this page. Continued use of the service constitutes acceptance of the new terms."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Your data security is our priority. We transparently explain how your information is processed when you use VisuScan.",
+    "privacyContent": [
+      {
+        "title": "1. Introduction",
+        "description": "At VisuScan (\"we\", \"us\", or \"our\"), we value your privacy. This Privacy Policy explains the information we collect when you use our website (visuscan.com) and AI-powered image analysis services, how we use that information, and how we protect it."
+      },
+      {
+        "title": "2. Information We Collect",
+        "children": [
+          {
+            "title": "2.1. Uploaded Images (Most Important)",
+            "description": "Images you upload to use our service are processed temporarily solely for the purpose of performing the analysis. Once the analysis is complete and results are presented to you, the uploaded images are immediately and permanently deleted from our servers. We never store, retain, or share your images with third parties."
+          },
+          {
+            "title": "2.2. Usage Data and Cookies",
+            "description": "We may collect standard log data about how you use our service. This may include technical information such as your IP address, browser type, pages visited, and time of visit. We use this data to improve our service, ensure security, and for analytics purposes."
+          }
+        ]
+      },
+      {
+        "title": "3. How We Use Your Information?",
+        "list": [
+          "Providing and maintaining the AI-powered image analysis service.",
+          "Ensuring the security of our service and preventing misuse.",
+          "Analyzing and improving our service."
+        ]
+      },
+      {
+        "title": "4. Third-Party Service Providers",
+        "description": "We may utilize trusted third-party AI providers (e.g., Google Gemini API) to perform image analysis. Your images are transmitted to these providers in encrypted form only for the duration of the analysis. These providers do not use your data to train their own models."
+      },
+      {
+        "title": "5. Data Security",
+        "description": "We implement industry-standard security measures to protect your personal data against unauthorized access, use, or disclosure. All data transmissions are secured with SSL/TLS encryption."
+      },
+      {
+        "title": "6. Contact",
+        "description": "If you have any questions about this Privacy Policy, please contact us: <br /> Email: privacy@visuscan.com"
+      }
+    ]
+  },
+  "lastUpdated": "Last Updated",
   "language": "English"
 }

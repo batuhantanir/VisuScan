@@ -144,5 +144,99 @@
     },
     "cta": "Analize Başla"
   },
+  "terms": {
+    "title": "Hizmet Şartları",
+    "description": "VisuScan'i kullanmadan önce lütfen bu kullanım koşullarını dikkatlice okuyun.",
+    "termsContent": [
+      {
+        "title": "1. Şartların Kabulü",
+        "description": "VisuScan web sitesine erişerek veya hizmetlerimizi kullanarak, bu Hizmet Şartları'na (\"Şartlar\") bağlı kalmayı kabul etmiş olursunuz. Bu Şartları kabul etmiyorsanız, hizmetlerimizi kullanmamalısınız."
+      },
+      {
+        "title": "2. Hizmetin Tanımı",
+        "description": "VisuScan, kullanıcıların yüklediği görselleri analiz etmek için yapay zeka teknolojilerini kullanan bir web uygulamasıdır. Hizmet, \"olduğu gibi\" ve \"mevcut olduğu şekilde\" sunulmaktadır."
+      },
+      {
+        "title": "3. Kullanıcı Sorumlulukları",
+        "description": "Hizmeti kullanırken aşağıdaki eylemlerde bulunmamayı kabul edersiniz:",
+        "list": [
+          "Yasadışı, zararlı, tehditkar, müstehcen, nefret dolu veya başka bir şekilde sakıncalı içerik yüklemek.",
+          "Başkalarının fikri mülkiyet haklarını ihlal eden içerikler yüklemek.",
+          "Hizmetin güvenliğini ihlal etmeye çalışmak veya sisteme zarar verecek virüsler, solucanlar vb. yüklemek.",
+          "Yapay zeka modelini tersine mühendislik (reverse engineer) yapmaya çalışmak."
+        ]
+      },
+      {
+        "title": "4. Fikri Mülkiyet",
+        "children": [
+          {
+            "title": "4.1. Kullanıcı İçeriği",
+            "description": "Yüklediğiniz görsellerin tüm hakları size aittir. VisuScan'e görselleri yükleyerek, bize yalnızca analiz hizmetini sağlamak amacıyla bu görselleri geçici olarak işleme lisansı vermiş olursunuz."
+          },
+          {
+            "title": "4.2. VisuScan İçeriği",
+            "description": "Hizmetin tasarımı, kodu, logosu ve tüm yazılımları VisuScan'in mülkiyetindedir ve telif hakkı yasalarıyla korunmaktadır."
+          }
+        ]
+      },
+      {
+        "alert": true,
+        "title": "5. Yapay Zeka Sorumluluk Reddi (Önemli)",
+        "description": " VisuScan, en son yapay zeka teknolojilerini kullansa da, yapay zeka hatasız değildir. Analiz sonuçları her zaman %100 doğru, eksiksiz veya güvenilir olmayabilir. VisuScan tarafından sağlanan sonuçlar yalnızca bilgilendirme amaçlıdır ve tıbbi, hukuki, finansal veya diğer kritik kararlar için temel alınmamalıdır. Sonuçların doğruluğunu teyit etmek kullanıcının sorumluluğundadır."
+      },
+      {
+        "title": "6. Sorumluluğun Sınırlandırılması",
+        "description": "Yasaların izin verdiği azami ölçüde, VisuScan, hizmetin kullanımından veya kullanılamamasından kaynaklanan doğrudan, dolaylı, arızi veya cezai zararlardan sorumlu tutulamaz."
+      },
+      {
+        "title": "7. Şartların Değiştirilmesi",
+        "description": "Bu Şartları dilediğimiz zaman değiştirme hakkımızı saklı tutarız. Değişiklikler bu sayfada yayınlandığı anda yürürlüğe girer. Hizmeti kullanmaya devam etmeniz, yeni şartları kabul ettiğiniz anlamına gelir."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "description": "Verilerinizin güvenliği bizim önceliğimizdir. VisuScan'i kullanırken bilgilerinizin nasıl işlendiğini şeffaflıkla açıklıyoruz.",
+    "privacyContent": [
+      {
+        "title": "1. Giriş",
+        "description": "VisuScan (\"biz\", \"bizim\" veya \"şirket\") olarak, gizliliğinize önem veriyoruz. Bu Gizlilik Politikası, web sitemizi (visuscan.com) ve yapay zeka destekli görüntü analiz hizmetlerimizi kullandığınızda topladığımız bilgileri, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklar."
+      },
+      {
+        "title": "2. Topladığımız Bilgiler",
+        "children": [
+          {
+            "title": "2.1. Yüklediğiniz Görseller (En Önemlisi)",
+            "description": "Hizmetimizi kullanmak için yüklediğiniz görseller, yalnızca analiz işlemini gerçekleştirmek amacıyla geçici olarak işlenir. Analiz tamamlandığı ve sonuçlar size sunulduğu anda, yüklenen görsel sunucularımızdan derhal ve kalıcı olarak silinir. Görsellerinizi asla saklamaz, depolamaz veya üçüncü taraflarla paylaşmayız."
+          },
+          {
+            "title": "2.2. Kullanım Verileri ve Çerezler",
+            "description": "Hizmetimizi nasıl kullandığınıza dair standart günlük bilgileri (log data) toplayabiliriz. Bu; IP adresiniz, tarayıcı türünüz, ziyaret ettiğiniz sayfalar ve ziyaret saati gibi teknik bilgileri içerebilir. Bu verileri hizmetimizi iyileştirmek, güvenliği sağlamak ve analitik amaçlarla kullanırız."
+          }
+        ]
+      },
+      {
+        "title": "3. Bilgilerinizi Nasıl Kullanıyoruz?",
+        "list": [
+          "Yapay zeka tabanlı görüntü analizi hizmetini sağlamak ve sürdürmek.",
+          "Hizmetimizin güvenliğini sağlamak ve kötüye kullanımı önlemek.",
+          "Hizmetimizi analiz etmek ve geliştirmek."
+        ]
+      },
+      {
+        "title": "4. Üçüncü Taraf Hizmet Sağlayıcılar",
+        "description": "Görüntü analizi işlemini gerçekleştirmek için güvenilir üçüncü taraf yapay zeka sağlayıcılarından (örneğin; Google Gemini API) yararlanabiliriz. Görselleriniz, yalnızca analiz süresince bu sağlayıcılara şifreli olarak iletilir. Bu sağlayıcılar, verilerinizi kendi modellerini eğitmek için kullanmazlar."
+      },
+      {
+        "title": "5. Veri Güvenliği",
+        "description": "Kişisel verilerinizi yetkisiz erişime, kul lanıma veya ifşaya karşı korumak için endüstri standardında güvenlik önlemleri uyguluyoruz.Tüm veri iletimleri SSL/TLS şifrelemesi ile korunmaktadır."
+      },
+      {
+        "title": "6. İletişim",
+        "description": "Bu Gizlilik Politikası hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin: <br /> E-posta: privacy@visuscan.com"
+      }
+    ]
+  },
+  "lastUpdated": "Son Güncelleme",
   "language": "Türkçe"
 }
