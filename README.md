@@ -90,7 +90,9 @@ Frontend, isteği Python tabanlı backend API’ye gönderir.
 Backend, gelen veriyi Gemini API kullanarak yapay zekâ ile analiz eder.
 Analiz sonucu frontend’e geri döndürülür ve kullanıcıya görsel olarak sunulur.
 
-## Sorun Giderme
+
+## Sorun Giderme
 .env dosyasında GEMINI_API_KEY değişkeninin doğru tanımlandığından emin olun.
 Frontend backend’e erişemiyorsa CORS ve API URL ayarlarını kontrol edin.
 Docker kaynaklı sorunlarda container loglarını ve Nginx yapılandırmasını inceleyin.
+
