@@ -60,7 +60,7 @@ docker compose up --build
 ```
 Container’ları durdurmak için:
 ```bash
-docker compose up --build
+docker compose down --build
 ```
 
 ---
@@ -78,8 +78,8 @@ python main.py
 Frontend
 ```bash
 cd frontend
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 ---
@@ -95,4 +95,5 @@ Analiz sonucu frontend’e geri döndürülür ve kullanıcıya görsel olarak s
 .env dosyasında GEMINI_API_KEY değişkeninin doğru tanımlandığından emin olun.
 Frontend backend’e erişemiyorsa CORS ve API URL ayarlarını kontrol edin.
 Docker kaynaklı sorunlarda container loglarını ve Nginx yapılandırmasını inceleyin.
+
 
